@@ -1,0 +1,1 @@
+A pre-trained model of CRA-ResNet50 on ImageNet-1k can be downloaded from [here](https://drive.google.com/file/d/1_R5OXSGTIPFn4vNCPXKSr_qb5KM-yZsI)

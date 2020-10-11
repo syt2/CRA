@@ -1,0 +1,27 @@
+cuda: "all"
+model:
+    arch: cra
+    depth: 50
+data:
+    dataset: imagenet
+    train_dir: /PATH/TO/ILSVRC/train
+    val_dir: /PATH/TO/ILSVRC/val
+    workers: 32
+training:
+    runid: 1
+    epochs: 100
+    batch_size: 256
+    loss:
+        name: 'cross_entropy'
+    optimizer:
+        name: 'sgd'
+        lr: 0.1
+        weight_decay: 0.0001
+        momentum: 0.9
+    lr_schedule:
+        name: 'multi_step'
+        milestones: [30,60,90]
+        gamma: 0.1
+    save_interval: 1
+    resume: save_model.pkl
+    best_model: best_model.pkl
