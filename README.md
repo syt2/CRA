@@ -1,7 +1,5 @@
 # Channel Reassessment Attention Module
-
-The implementation for Channel Reassessment Attention (CRA) module. 
-
+[Convolutional neural network optimization via channel reassessment attention module](https://doi.org/10.1016/j.dsp.2022.103408)
 
 ## Approach
 ![](img/1.png)
